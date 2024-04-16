@@ -1,0 +1,44 @@
+### Get all the cars
+GET http://localhost:7007/api/cars
+
+### Get car by id
+GET http://localhost:7007/api/cars/2
+
+### Create car
+POST http://localhost:7007/api/cars
+
+{
+"brand": "Merrrcedes",
+"model": "A-Class",
+"make": "Mercedes-Benz",
+"firstRegistrationYear": "2024-03-04",
+"price": 120000
+}
+
+### Update existing car by id
+PUT http://localhost:7007/api/cars/8
+
+{
+"brand": "TEST",
+"model": "TEST",
+"make": "TEST",
+"firstRegistrationYear": "2024-03-04",
+"price": 5000
+}
+
+### Delete existing car by id
+DELETE http://localhost:7007/api/cars/7
+
+### Group cars by brand and price
+GET http://localhost:7007/api/cars/grouping
+
+### Group by year
+GET http://localhost:7007/api/cars/grouping/2024
+
+### Create token using email login
+POST http://localhost:7007/api/cars/login
+Content-Type: application/json
+
+{
+"email": "seller5@carshop.com"
+}
